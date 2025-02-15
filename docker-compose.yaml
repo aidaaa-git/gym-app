@@ -1,5 +1,12 @@
 version: "3"
 services:
+  gym-app:
+    image: gym-app:v1.0
+    container_name: gym-app
+    hostname: gym-app
+    ports:
+      - "8080:8080"
+
   mysql-db:
      image: mysql:8.0
      container_name: mysql
